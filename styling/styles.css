@@ -1,0 +1,167 @@
+/*  GLOBAL STYLING
+--------------------------------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    color: #F7F7F7;
+    background-color: rgb(18, 18, 18);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #F7F7F7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+/*  HEADER STYLING
+--------------------------------------------*/
+header {
+    width: 100%;
+    text-align: center;
+}
+
+.headertitle {
+    background-color: #406718;
+    height: 100px;
+    padding: 1px;
+    font-size: 60px;
+    font-family: 'Black Ops One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+.navigation {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #690;
+ height: 45px;
+}
+
+.navigation a {
+    padding-right: 60px;
+}
+
+/*  INTRODUKTION STYLING
+--------------------------------------------*/
+.introduktion {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bike {
+    margin-right: 25px;
+    margin-left: 10px;
+    height: 600px;
+}
+
+.main-intro {
+    overflow-wrap: break-word;
+    border-style: solid;
+    border-color: #690;
+    width: 100%;
+    margin-right: 10px;
+
+}
+
+.main-intro p {
+    margin: 3%;
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+/*  COMMERCIAL STYLING
+--------------------------------------------*/
+
+.commercial-ol {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: 1;
+    gap: 2rem;
+    padding: 0;
+    text-align: center;
+
+}
+
+.commercial-style {
+    background-color: #690;
+    flex-grow: 1;
+}
+
+
+.commer-bike {
+    width: 100%;
+}
+
+/* FOOTER STYLING
+--------------------------------------------*/
+footer {
+    background-color: #406718;
+    height: 50px;
+}
+
+footer p {
+    padding-left: 10px;
+}
+
+/*  LESS THEN 1000px
+--------------------------------------------*/
+@media (max-width: 1000px) {
+
+    .navigation a{
+        padding-right: 30px;
+    }
+
+    .main-intro {
+        overflow-wrap: break-word;
+        border-style: solid;
+        border-color: #690;
+        width: 100%;    
+    }
+    
+    .main-intro p {
+        margin: 3%;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+}
+
+/*  LESS THEN 1000px    Also is unfinished
+--------------------------------------------*/
+@media (max-width: 800px) {
+
+    .headertitle {
+        font-size: 50px;
+    }
+
+    .navigation a {
+        padding-right: 13px;
+    }
+
+    .introduktion {
+        display: flex;
+        flex-direction: column-reverse;
+    
+        width: 100%;
+    }
+
+    .main-intro {
+        margin-right: 0, auto;
+        padding: 0;
+    }
+}
